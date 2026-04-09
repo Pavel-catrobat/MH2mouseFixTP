@@ -6,7 +6,7 @@ DWORD WINAPI AimThread(LPVOID lpParam) {
 
     while (true) {
         // button
-        if (GetAsyncKeyState(0x58) & 0x8000) {
+        if (GetAsyncKeyState(0x5A) & 0x8000) {
             if (!isAiming) {
                 // button true
                 mouse_event(MOUSEEVENTF_RIGHTDOWN, 0, 0, 0, 0);
