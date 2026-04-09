@@ -8,7 +8,7 @@ DWORD WINAPI AimThread(LPVOID lpParam) {
         // button
         if (GetAsyncKeyState(0x58) & 0x8000) {
             if (!isAiming) {
-                // Имитируем зажатие правой кнопки мыши
+                // button true
                 mouse_event(MOUSEEVENTF_RIGHTDOWN, 0, 0, 0, 0);
                 isAiming = true;
             }
